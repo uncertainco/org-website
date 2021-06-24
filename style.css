@@ -45,13 +45,18 @@
   }
 }
 
-.header-bg {
+.header-logo{
+  height: 100px;
+  width: 100px;
+}
+
+/* .header-bg {
   background: url(..D:\uncertain solutions\Org Website\org-website\bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
   padding: 120px 0 60px;
-}
+} */
 
 .header-bg::before {
   content: "";
