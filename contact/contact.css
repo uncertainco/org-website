@@ -12,8 +12,17 @@
      margin-top: 70px;
  } 
 
- .card-left-margin{
-     margin-left: 30px;
+ .margin-footer{
+   margin-top: 150px;
+ }
+
+ .card-margin-left{
+   margin-left: 25px;
+ }
+
+ .card-margin{
+     margin-right: 20px;
+     border-radius: 10px;
  }
 .card-size{
     height: 400px;
@@ -25,6 +34,24 @@
     margin-top: 30px;
     text-align: left;
     
+}
+
+.card-button1{
+  margin-top: 80px;
+}
+
+.card-button2{
+  margin-top: 42px;
+}
+.card-button3{
+  margin-top: 32px;
+}
+.card-button4{
+  margin-top: 55px;
+}
+
+.card-background{
+  background-color: #FBFBFB;
 }
 
   
