@@ -65,4 +65,16 @@
     box-shadow: none;
   }
 
-
+  .mail-us{
+    margin-left: 450px;
+  }
+  .mail-us h2{
+    margin-top: 100px;
+  }
+  .mail-us a{
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  .contact-button{
+    margin-left: 50px;
+  }
