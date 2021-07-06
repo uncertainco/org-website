@@ -31,15 +31,6 @@ body {
             margin-left: 10%;
             margin-bottom: 2%;
         }
-
-    @media screen and (max-width: 650px) {
-        .open_positions {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 4%;
-        }
-    }
         
         hr {
             margin: 0px;
