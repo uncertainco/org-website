@@ -21,15 +21,25 @@ body {
         
         p {
             font-size: 22px;
-            width: 80%;
-            text-align: left;
-            padding-left: 10%;
+            width: auto;
+            text-align: justify;
+            padding-left: 13%;
+            padding-right: 13%;
         }
         
         .open_positions {
             margin-left: 10%;
             margin-bottom: 2%;
         }
+
+    @media screen and (max-width: 650px) {
+        .open_positions {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 4%;
+        }
+    }
         
         hr {
             margin: 0px;
