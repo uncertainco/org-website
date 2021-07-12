@@ -1,0 +1,92 @@
+
+.navbar{
+  padding: 0.1 0 0.2rem;
+}
+
+.navbar-brand{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.nav-item{
+
+  padding: 0 10px;
+  text-align: left;
+}
+.nav-link{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+}
+
+
+.card__wrapper {
+  display: flex;
+  width: 100%;
+  padding: 5px 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card__main {
+  width: calc(33.333% - 15px);
+  margin-bottom: 30px;
+  position: relative;
+  height: 300px;
+  background-color: red;
+}
+.card__main:hover .card__overlay {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(1, 1, 1, 0.6));
+}
+.card__main:hover {
+  box-shadow: 0 10px 6px -6px #777;
+  transform: scale(1.01);
+}
+.card__background {
+  width: 100%;
+  height: 100%;
+}
+.card__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(1, 1, 1, 0.5));
+}
+.card__title {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-size: 24px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .card__main {
+    width: 100%;
+  }
+}
+.portfolio__wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 12px;
+  font-size: 60px;
+  font-weight: 100px;
+}
+
+
+@media screen and (max-width: 770px) {
+  .card-body {
+    align-content: center;
+  }
+  footer {
+    text-align: center;
+  }
+}
