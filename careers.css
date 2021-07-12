@@ -21,13 +21,13 @@ body {
         
         p {
             font-size: 22px;
-            width: 80%;
-            text-align: left;
-            padding-left: 10%;
+            width: auto;
+            text-align: justify;
+            padding-left: 13%;
+            padding-right: 13%;
         }
         
         .open_positions {
-            margin-left: 10%;
             margin-bottom: 2%;
         }
         

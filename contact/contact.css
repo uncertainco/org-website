@@ -111,5 +111,8 @@
     .card-body{
      align-content: center; 
     }
+    footer{
+      text-align: center;
+    }
     
   }
