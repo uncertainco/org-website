@@ -6,9 +6,12 @@ Author URI: https://apollo13themes.com/
 Theme URI: https://apollo13themes.com/rife/free/
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Requires at least: 4.7
+Tested up to: 5.7
+Requires PHP: 5.3.0
 Tags: e-commerce, portfolio, photography, two-columns, three-columns, left-sidebar, right-sidebar, grid-layout, translation-ready, sticky-post, post-formats, custom-colors, custom-menu, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, rtl-language-support
 Text Domain: rife-free
-Version: 2.4.7
+Version: 2.4.12
 */
 
 /* ==========================================================================
@@ -427,8 +430,11 @@ hr{
 /* ==========================================================================
    General layout
    ========================================================================== */
-html.show-scroll body{
+html.show-scroll{
 	overflow-y: scroll;
+}
+html.show-scroll body{
+	overflow-y: auto;
 }
 html.post-lightbox-active body{
 	overflow-y: hidden;
@@ -1059,6 +1065,98 @@ div.vc-mg-item-desc{
 .hamburger--efx.active i::before,
 .hamburger--efx.active i::after{
 	transition-delay: 0s, 0.3s, 0.3s;
+}
+
+/* transform to X2 effect */
+.hamburger--efx2 i::before,
+.hamburger--efx2 i::after{
+	transition-duration: .3s;
+	transition-delay: .3s, 0s, 0s;
+}
+.hamburger--efx2 i::before{
+	transition-property: top, background-color, transform;
+}
+.hamburger--efx2 i::after{
+	transition-property: bottom, background-color, transform;
+}
+/* active state */
+.hamburger--efx2 i{
+	background-color: transparent !important;
+}
+.hamburger--efx2.active i::before{
+	-webkit-transform: rotateZ(135deg) scaleX(1.1) translate(4px, -4px);
+		-ms-transform: rotateZ(135deg) scaleX(1.1) translate(4px, -4px);
+			transform: rotateZ(135deg) scaleX(1.1) translate(4px, -4px);
+}
+.hamburger--efx2.active i::after{
+	-webkit-transform: rotateZ(-135deg) scaleX(1.1) translate(4px, 4px);
+		-ms-transform: rotateZ(-135deg) scaleX(1.1) translate(4px, 4px);
+			transform: rotateZ(-135deg) scaleX(1.1) translate(4px, 4px);
+}
+
+/* transform to X3 effect */
+.hamburger--efx3 i::before,
+.hamburger--efx3 i::after{
+	transition-duration: .3s;
+	transition-delay: .3s, 0s, 0s;
+}
+.hamburger--efx3 i::before,
+.hamburger--efx3 i::after{
+	transition-property: background-color, transform;
+}
+/* active state */
+.hamburger--efx3 i{
+	background-color: transparent !important;
+}
+.hamburger--efx3.active i::before{
+	-webkit-transform: rotateZ(45deg) scaleX(1.1) translate(4px, 3px);
+		-ms-transform: rotateZ(45deg) scaleX(1.1) translate(4px, 3px);
+			transform: rotateZ(45deg) scaleX(1.1) translate(4px, 3px);
+}
+.hamburger--efx3.active i::after{
+	-webkit-transform: rotateZ(-45deg) scaleX(1.1) translate(5px, -4px);
+		-ms-transform: rotateZ(-45deg) scaleX(1.1) translate(5px, -4px);
+			transform: rotateZ(-45deg) scaleX(1.1) translate(5px, -4px);
+}
+
+
+/* transform to Slider effect */
+.hamburger--efslider i{
+	top: 7px;
+	transition-timing-function: ease;
+	transition-duration:        .3s;
+	transition-property:        transform, background-color;
+}
+.hamburger--efslider i::before{
+	top: 12px;
+}
+.hamburger--efslider i::after{
+	bottom: -6px;
+}
+.hamburger--efslider i::before,
+.hamburger--efslider i::after{
+	transition-duration: .3s;
+	transition-property: background-color, transform, width, height;
+}
+
+/* active state */
+.hamburger--efslider.active i{
+	-webkit-transform: rotateZ(-45deg) translate(-4px, 4px);
+		-ms-transform: rotateZ(-45deg) translate(-4px, 4px);
+			transform: rotateZ(-45deg) translate(-4px, 4px);
+}
+.hamburger--efslider.active i::before{
+	-webkit-transform: rotateZ(90deg) scaleX(1.05) translate(-11px, 0);
+		-ms-transform: rotateZ(90deg) scaleX(1.05) translate(-11px, 0);
+			transform: rotateZ(90deg) scaleX(1.05) translate(-11px, 0);
+}
+.hamburger--efslider.active i::after{
+	-webkit-transform: rotateZ(45deg) translate(-60px, -7px);
+		-ms-transform: rotateZ(45deg) translate(-60px, -7px);
+			transform: rotateZ(45deg) translate(-60px, -7px);
+	background-color: transparent !important;
+	width: 0;
+	height: 0;
 }
 
 /* transform to <-- effect */
@@ -5013,6 +5111,9 @@ span.result-count{
 	text-align: center;
 	transition: background-color 0.5s;
 }
+.object-item .proofing i:hover{
+	background-color: rgba(0,0,0,0.9);
+}
 .object-item .proofing .p-id:hover{
 	background-color: #000;
 }
@@ -5027,7 +5128,7 @@ span.result-count{
 	left: 5px;
 }
 .object-item .proofing i.filled,
-.object-item .proofing i:hover{
+.object-item .proofing i.filled:hover{
 	background-color: #20C063;
 }
 .object-item .proofing i.filled.p-check{
@@ -7476,6 +7577,7 @@ body.a13-body-sticky-one-page .content-limiter{
 .color a.a13_soc-skype{ background-color: #00AFF0; }
 .color a.a13_soc-spotify{ background-color: #80B719; }
 .color a.a13_soc-stumbleupon{ background-color: #27A036; }
+.color a.a13_soc-telegram{ background-color: #1E96C8; }
 .color a.a13_soc-tripadvisor{ background-color: #00a680; }
 .color a.a13_soc-tumblr{ background-color: #34526F; }
 .color a.a13_soc-twitter{ background-color: #00A0D1; }
@@ -7531,6 +7633,7 @@ body.a13-body-sticky-one-page .content-limiter{
 .color_hover a.a13_soc-skype:hover{ background-color: #00AFF0; }
 .color_hover a.a13_soc-spotify:hover{ background-color: #80B719; }
 .color_hover a.a13_soc-stumbleupon:hover{ background-color: #27A036; }
+.color_hover a.a13_soc-telegram:hover{ background-color: #1E96C8; }
 .color_hover a.a13_soc-tripadvisor:hover{ background-color: #00a680; }
 .color_hover a.a13_soc-tumblr:hover{ background-color: #34526F; }
 .color_hover a.a13_soc-twitter:hover{ background-color: #00A0D1; }
@@ -7584,6 +7687,7 @@ body.a13-body-sticky-one-page .content-limiter{
 .icons-only.color a.a13_soc-skype{ color: #00AFF0; }
 .icons-only.color a.a13_soc-spotify{ color: #80B719; }
 .icons-only.color a.a13_soc-stumbleupon{ color: #27A036; }
+.icons-only.color a.a13_soc-telegram{ color: #1E96C8; }
 .icons-only.color a.a13_soc-tripadvisor{ color: #00a680; }
 .icons-only.color a.a13_soc-tumblr{ color: #34526F; }
 .icons-only.color a.a13_soc-twitter{ color: #00A0D1; }
@@ -7635,6 +7739,7 @@ body.a13-body-sticky-one-page .content-limiter{
 .icons-only.color_hover a.a13_soc-skype:hover{ color: #00AFF0; }
 .icons-only.color_hover a.a13_soc-spotify:hover{ color: #80B719; }
 .icons-only.color_hover a.a13_soc-stumbleupon:hover{ color: #27A036; }
+.icons-only.color_hover a.a13_soc-telegram:hover{ color: #1E96C8; }
 .icons-only.color_hover a.a13_soc-tripadvisor:hover{ color: #00a680; }
 .icons-only.color_hover a.a13_soc-tumblr:hover{ color: #34526F; }
 .icons-only.color_hover a.a13_soc-twitter:hover{ color: #00A0D1; }

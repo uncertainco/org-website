@@ -1,6 +1,12 @@
 jQuery.noConflict();
 
 (function($, window, document){
+	var ElementorIsReadyFired = false;
+	$( window ).on( 'elementor/frontend/init', () => {
+		//it is already ready to fire
+		ElementorIsReadyFired = true;
+	});
+
 	var onReady = function(){
 		var typedJS = function($scope){
 			$scope = typeof $scope === 'undefined'? $(document.body) : $scope;
@@ -40,7 +46,6 @@ jQuery.noConflict();
 						new Waypoint({
 							element: _this,
 							handler: function(){
-								console.log('bottom-in-view');
 								start_typing(this.element);
 								//fire only once
 								this.destroy();
@@ -62,11 +67,24 @@ jQuery.noConflict();
 
 		typedJS();
 
-		if(typeof elementorFrontend !== 'undefined' && typeof elementorFrontend.hooks !== 'undefined'){
-			elementorFrontend.hooks.addAction( 'frontend/element_ready/writing-effect-headline.default', function( $scope ) {
-				typedJS($scope);
-			} );
+		var ElementorInitCallback = function(){
+			if(typeof elementorFrontend !== 'undefined' && typeof elementorFrontend.hooks !== 'undefined'){
+				elementorFrontend.hooks.addAction( 'frontend/element_ready/writing-effect-headline.default', function( $scope ) {
+					typedJS($scope);
+				} );
+			}
+		};
+
+		//if event didn't fire yet
+		$( window ).on( 'elementor/frontend/init', () => {
+			ElementorInitCallback();
+		} );
+
+		//if event occured before the ready event, lets fire
+		if(ElementorIsReadyFired === true){
+			ElementorInitCallback();
 		}
+
 	};
 
 	$(document).ready(onReady);
