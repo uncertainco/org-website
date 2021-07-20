@@ -196,6 +196,20 @@
             max-width: 100%;
             box-sizing: border-box;
         }
+        
+        @media only screen and (max-width: 1024px) {
+            .icons-1 {
+                display: block;
+            }
+        }
+        .fa-bars {
+            color: #fff;
+        }
+        
+        .logo-container img {
+            width: 125px;
+/* position: relative; */
+        }
     </style>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
@@ -216,13 +230,17 @@
         </div>
         <div class="page-background to-move"></div>
         <header id="header" class="to-move a13-horizontal header-type-one_line a13-normal-variant header-variant-one_line full tools-icons-1 sticky-no-hiding desktop_menu" itemtype="https://schema.org/WPHeader" itemscope="">
-            <div class="head">
+            <div class="head" style="
+    padding-right: 0px;
+">
                 <div class="logo-container" itemtype="https://schema.org/Organization" itemscope="">
                     <a href="https://www.linkedin.com/company/uncertain-co/">
-                        <img src="logo(new).png" alt="img-not-found">
+                        <img src="new logo.png" alt="img-not-found">
                     </a>
                 </div>
-                <nav id="access" class="navigation-bar" itemtype="https://schema.org/SiteNavigationElement" itemscope="">
+                <nav id="access" class="navigation-bar" itemtype="https://schema.org/SiteNavigationElement" itemscope="" style="
+    padding-right: 0px;
+">
                     <!-- this element is need in HTML even if menu is disabled -->
                     <div class="menu-container loaded">
                         <ul id="menu-main-menu" class="top-menu with-effect menu--ferdinand opener-icons-on">
@@ -237,12 +255,17 @@
                     </div>
                 </nav>
                 <!-- #access -->
-                <div id="header-tools" class="icons-1"><button id="side-menu-switch" class="fa fa-bookmark tool" title="More info"><span class="screen-reader-text">More info</span></button><button id="mobile-menu-opener" class="a13icon-menu tool" title="Main menu"><span class="screen-reader-text">Main menu</span></button></div>
-                <div class="socials icons-only white color_hover hide_on_mobile">
+                <div id="header-tools" class="icons-1">
+                    <!-- <button id="side-menu-switch" class="fa fa-bookmark tool" title="More info">
+<span class="screen-reader-text">More info</span></button> -->
+
+                    <button id="mobile-menu-opener" class="fas fa-bars" title="Main menu">
+<span class="screen-reader-text">Main menu</span></button></div>
+                <!-- <div class="socials icons-only white color_hover hide_on_mobile">
                     <a target="_blank" title="Instagram" href="https://rifetheme.com/lander/#" class="a13_soc-instagram fa fa-instagram" rel="noopener"></a>
                     <a target="_blank" title="Dribbble" href="https://rifetheme.com/lander/#" class="a13_soc-dribbble fa fa-dribbble" rel="noopener"></a>
                     <a target="_blank" title="Twitter" href="https://rifetheme.com/lander/#" class="a13_soc-twitter fa fa-twitter" rel="noopener"></a>
-                </div>
+                </div> -->
             </div>
         </header>
         <div id="mid" class="to-move no-top-space no-bottom-space layout-full_fixed layout-no-edge layout-fixed no-sidebars">
@@ -345,7 +368,7 @@
                                                                         <div class="elementor-element elementor-element-cd854f3 elementor-widget elementor-widget-image" data-id="cd854f3" data-element_type="widget" data-widget_type="image.default">
                                                                             <div class="elementor-widget-container">
                                                                                 <div class="elementor-image">
-                                                                                    <a href="https://rifetheme.com/lander/#about">
+                                                                                    <a href="#about">
                                                                                         <img width="297" height="35" src="MYFILES/lander-downBTN.png" class="attachment-full size-full" alt="" loading="lazy"> </a>
                                                                                 </div>
                                                                             </div>
@@ -748,7 +771,7 @@
                                                                                                     <div class="elementor-element elementor-element-65b44c2 elementor-widget elementor-widget-image" data-id="65b44c2" data-element_type="widget" data-widget_type="image.default">
                                                                                                         <div class="elementor-widget-container">
                                                                                                             <div class="elementor-image">
-                                                                                                                <img width="400" height="500" src="Images\Utkrsh.png" class="attachment-full size-full" alt="" loading="lazy" srcset="Images\Utkrsh.png 400w, https://mk0demosgcc89fcb9u9m.kinstacdn.com/wp-content/uploads/2019/02/raven-face-2-240x300.jpg 240w" sizes="(max-width: 400px) 100vw, 400px"></div>
+                                                                                                                <img width="400" height="500" src="Images\Utkarsh.png" class="attachment-full size-full" alt="" loading="lazy" srcset="Images\Utkarsh.png 400w, https://mk0demosgcc89fcb9u9m.kinstacdn.com/wp-content/uploads/2019/02/raven-face-2-240x300.jpg 240w" sizes="(max-width: 400px) 100vw, 400px"></div>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                     <div class="elementor-element elementor-element-0d8cec7 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="0d8cec7" data-element_type="widget" data-widget_type="social-icons.default">
@@ -939,7 +962,7 @@
         <footer id="footer" class="to-move narrow classic footer-separator" itemtype="https://schema.org/WPFooter" itemscope="">
             <div class="foot-widgets four-col dark-sidebar">
                 <div class="foot-content clearfix">
-                    <div id="media_image-8" class="widget widget_media_image"><img width="146" height="40" src="logo(new).png" class="image wp-image-12104  attachment-full size-full" alt="" loading="lazy" style="max-width: 100%; height: auto;"></div>
+                    <div id="media_image-8" class="widget widget_media_image"><img width="146" height="40" src="new logo.png" class="image wp-image-12104  attachment-full size-full" alt="" loading="lazy" style="max-width: 100%; height: auto;"></div>
                     <div id="text-17" class="widget widget_text">
                         <h3 class="title"><span>UNCERTAIN CO</span></h3>
                         <div class="textwidget">
@@ -980,7 +1003,7 @@
                 </div>
             </div>
         </footer>
-        <nav id="side-menu" class="side-widget-menu light-sidebar at-right">
+        <!-- <nav id="side-menu" class="side-widget-menu light-sidebar at-right">
             <div class="scroll-wrap">
                 <div id="a13-social-icons-3" class="widget widget_a13_social_icons">
                     <div class="socials icons-only color black_hover">
@@ -1027,7 +1050,7 @@
                 </div>
             </div>
             <span class="a13icon-cross close-sidebar"></span>
-        </nav>
+        </nav> -->
         <a href="#top" id="to-top" class="to-top fa fa-angle-up"></a>
         <div id="content-overlay" class="to-move"></div>
 

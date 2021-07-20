@@ -1916,7 +1916,7 @@ a.hidden-logo{
 .header-horizontal #header-tools::before,
 .header-horizontal .head .socials::before{
 	content: "";
-	display: inline-block;
+	display: none;
 	height: 25px;
 	width: 1px;
 	background-color: #E5E5E5;
