@@ -75,12 +75,17 @@
   text-align: center;
 }
 
-h2 {
+/* h2 {
+  margin-bottom: 12px;
   margin-bottom: 12px;
   font-size: 60px;
   font-weight: 100px;
 }
+ */
+footer a{
+  text-decoration: none;
 
+}
 
 @media screen and (max-width: 770px) {
   .card-body {
