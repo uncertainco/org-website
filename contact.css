@@ -1,0 +1,119 @@
+/* 
+
+.navbar{
+  padding: 0.1 0 0.2rem;
+}
+
+.navbar-brand{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.nav-item{
+
+  padding: 0 10px;
+  text-align: left;
+}
+.nav-link{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+}
+ */
+
+.title h1{
+    font-size: 60px;  
+    margin-bottom: 30px;
+}
+.center {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+ .margin{
+     margin-top: 70px;
+ } 
+
+ .margin-footer{
+   margin-top: 150px;
+ }
+
+ .card-margin-left{
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .card-margin{
+     margin-right: auto;
+     margin-left: auto;
+     border-radius: 10px;
+ }
+.card-size{
+    height: 400px;
+    width: 250px;
+
+}
+
+.card-content{
+    margin-top: 30px;
+    text-align: left;
+    
+}
+
+.card-button1{
+  margin-top: 80px;
+}
+
+.card-button2{
+  margin-top: 42px;
+}
+.card-button3{
+  margin-top: 32px;
+}
+.card-button4{
+  margin-top: 55px;
+}
+
+.card-background{
+  background-color: #FBFBFB;
+}
+
+  
+  .form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .form-control.shadow-0:focus {
+    box-shadow: none;
+  }
+
+  .mail-us{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .mail-us h2{
+    margin-top: 100px;
+    margin-left: 80px;
+  }
+  .mail-us a{
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  .contact-button{
+    margin-left: 50px;
+  }
+
+  
+
+  @media screen and (max-width: 770px) {
+    .card-body{
+     align-content: center; 
+    }
+    footer{
+      text-align: center;
+    }
+    
+  }
