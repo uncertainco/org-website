@@ -195,12 +195,6 @@
             box-sizing: border-box;
         }
         
-        @media only screen and (max-width: 1024px) {
-            .icons-1 {
-                display: block;
-            }
-        }
-        
         .fa-bars {
             color: #fff;
         }
@@ -218,7 +212,6 @@
             top: 50%;
             transform: translateY(-50%);
         }
-        
         @media (max-width:720px){
             .left-title {
                 font-size: 30px;
@@ -229,6 +222,20 @@
             }
         }
         
+        @media only screen and (max-width: 1024px) {
+            .icons-1 {
+                display: block;
+            }
+            
+            .left-title {
+                position: absolute;
+                left: 20px;
+                color: #fff;
+            } 
+            .logo-container img {
+                visibility: hidden;
+            }
+        }        
     </style>
     <link rel="icon" href="Images/favicon.png" type="image/png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">

@@ -54,12 +54,11 @@
             font-family: poppins;
             color: #5c7c95;
             position: absolute;
-            top: 5%;
+            top: 30px;
             z-index: 100;
             margin-left: 150px;
-    
           }
-    @media (max-width:720px){
+         @media (max-width:728px){
             .left-title {
               position: absolute;
               z-index: 100;
@@ -67,11 +66,26 @@
               left: 40px;
               font-size: 30px;
               color: #fff;
+              top: 0px;
             }
             .logo-new{
+              display: none;
+              visibility: hidden;
+            }
+        }
+      @media only screen and (max-width: 1024px) {
+            .left-title {
+                position: absolute;
+                left: 20px;
+                color: #fff;
+                bottom: 100%;
+                margin-left: 0;
+            } 
+            .logo-new {
                 visibility: hidden;
             }
         }
+      
     </style>
 
 
