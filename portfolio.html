@@ -54,14 +54,21 @@
             font-family: poppins;
             color: #5c7c95;
             position: absolute;
-            top: 50%;
+            top: 5%;
+            z-index: 100;
             margin-left: 150px;
-            transform: translateY(-50%);
     
           }
-    
-        @media (max-width:720px){
+    @media (max-width:720px){
             .left-title {
+              position: absolute;
+              z-index: 100;
+              margin-left: 0px;
+              left: 40px;
+              font-size: 30px;
+              color: #fff;
+            }
+            .logo-new{
                 visibility: hidden;
             }
         }
@@ -71,13 +78,13 @@
 </head>
 
 <body>
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky">
-        <a class="navbar-brand" href="https://www.linkedin.com/company/uncertain-co/">
-            <img src="navbar-logo.png" class="logo-new" width="120px"alt="">
-        </a>
         <span class="left-title">
           Uncertain Co.
-        </span>       
+        </span>  
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky">
+      <a class="navbar-brand" href="https://www.linkedin.com/company/uncertain-co/">
+            <img src="navbar-logo.png" class="logo-new" width="120px"alt="">
+        </a>     
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
