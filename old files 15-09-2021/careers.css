@@ -1,0 +1,56 @@
+
+.intro-wrap {
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro-content {
+  position: relative;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+
+.open_positions {
+  margin-bottom: 2%;
+}
+
+hr {
+  margin: 0px;
+}
+
+.featured_positions {
+  background-color: rgb(213, 198, 238);
+  width: 100%;
+}
+
+.card-content {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+  box-shadow: none;
+}
+
+.contact-button {
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 770px) {
+  .card-body {
+    align-content: center;
+  }
+}
